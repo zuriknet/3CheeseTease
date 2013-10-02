@@ -1,0 +1,444 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #e72116;
+	font-family: 'Pathway Gothic One', Helvetica, Arial, sans-serif;
+}
+
+body {
+	background: #e72116;
+    font-size: 1.22em;    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+   /*placeholder*/
+.mapPlaceholder {
+    left: -74px;
+    position: relative;
+    top: -298px;
+    transform: rotate(-3deg);
+}
+} /*placeholder*/
+   
+ul, ol, ul li {
+    display: block;
+    float: left;
+    list-style-type: none;
+	list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+	height: auto;
+	width: 100%;
+}
+
+#inner{
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	width: 1005px;
+}
+
+.headerWrapper{
+	background: #3e0000;.
+	height: 50px;
+}
+
+.header {
+    height: auto;
+    margin: 0 auto;
+    padding-left: 680px;
+    width: 500px;
+}
+
+.header > img {
+    display: block;
+    float: left;
+    margin: 13px 0 0;
+}
+
+.topnav {
+    display: block;
+    float: left;
+    margin: 12px 0 0 20px;
+    padding: 0;
+	list-style: none;
+}
+
+.topnav > li {
+    display: block;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+li.share {
+    float: left;
+    left: 30px;
+    list-style: none outside none;
+    margin-right: 20px;
+    position: relative;
+    top: 12px;
+}
+
+.twitter {
+    display: block;
+	float:left;
+    margin: 8px 0px 0px 10px;
+}
+.facebook{
+	display: block;
+	float: left;
+	margin: 8px 0px 0px 5px;
+}
+
+.pizza01 {
+    clear: both;
+    display: block;
+    margin-top: -50px;
+    position: absolute;
+}
+
+.pizza02 {
+    float: right;
+    position: relative;
+    top: -215px;
+}
+
+.pizza03 {
+    clear: both;
+    display: block;
+    float: left;
+    position: relative;
+    top: -550px;
+}
+
+.topCities {
+    display: block;
+    margin-left: 41px;
+    position: relative;
+    top: 20px;
+}
+
+.tweetBubble {
+    clear: both;
+    display: block;
+    float: right;
+    left: 25px;
+    position: relative;
+    top: 25px;
+}
+
+#voteDetails {
+    clear: both;
+    margin: -389px -15px 0 0;
+}
+
+#streamBox {
+    background: none repeat scroll 0 0 #000000;
+    clear: both;
+    float: right;
+    height: 615px;
+    opacity: 0.8;
+    position: relative;
+    top: -215px;
+    width: 494px;
+}
+
+#voteDetails > ul {
+    color: #FFFFFF;
+    display: block;
+    margin-left: 40px;
+    margin-top: 25px;
+    position: absolute;
+    width: 330px;
+}
+
+.dateTime {
+    color: #3E0000;
+    font-family: Arial,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    left: 30px;
+    position: absolute;
+    top: -9px;
+}
+
+.city01, .city02, .city03, .city04, .city05, .city06 {
+    clear: both;
+    display: block;
+    float: left;
+    left: -20px;
+    position: relative;
+    top: -7px;
+}
+
+#voteDetails ul span {
+    display: inline-block;
+    left: 50px;
+    position: relative;
+    top: 10px;
+}
+
+ul span li p {
+    clear: both;
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 14px;
+    left: 85px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#voteDetails ul span#city01 li.city01, #voteDetails ul span#city01 li.city02, #voteDetails ul span#city01 li.city03 {
+    display: inline-block;
+    float: left;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#voteDetails ul span#city02 li.city04, #voteDetails ul span#city02 li.city05, #voteDetails ul span#city02 li.city06 {
+    display: inline-block;
+    float: left;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+p.votePop {
+    display: inline-block;
+    float: right;
+    left: 25px;
+    margin-left: -20px;
+    margin-top: 23px;
+    padding: 0;
+    position: relative;
+    top: 1px;
+}
+
+span#city01 {
+    display: inline-block;
+    float: left;
+}
+
+span#city02{
+	display: inline-block;
+	float: right;
+}
+
+.cityDetails {
+    width: 260px;
+}
+
+
+/* Map CSS*/
+div.container div#map-container div#map svg path{
+fill: black;
+color: #000;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
