@@ -57,14 +57,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
    
-   /*placeholder*/
+   /*map placeholder*/
 .mapPlaceholder {
-    left: -74px;
+    left: -30px;
     position: relative;
-    top: -298px;
+    top: -330px;
     transform: rotate(-3deg);
 }
-} /*placeholder*/
+
    
 ul, ol, ul li {
     display: block;
@@ -75,21 +75,33 @@ ul, ol, ul li {
     padding: 0;
 }
 
-#container{
-	height: auto;
-	width: 100%;
+#container {
+    background: url("../img/background.gif") repeat scroll 0 0 transparent;
+    bottom: -20px;
+    height: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
 }
 
 #inner{
 	height: auto;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 	width: 1005px;
 }
 
 .headerWrapper{
 	background: #3e0000;.
 	height: 50px;
+}
+
+.header > a {
+    display: block;
+    float: left;
+    margin-top: 10px;
 }
 
 div#container div.headerWrapper div.header {
@@ -117,6 +129,7 @@ div#container div.headerWrapper div.header {
 }
 
 .topnav > li {
+    color: #E72116;
     display: block;
     float: left;
     margin: 0 6px 0 0;
@@ -149,8 +162,9 @@ li.share {
 .pizza01 {
     clear: both;
     display: block;
-    margin-top: -50px;
-    position: absolute;
+    float: left;
+    position: relative;
+    top: -50px;
 }
 
 .pizza02 {
@@ -169,13 +183,12 @@ li.share {
 
 .topCities {
     display: block;
-    margin-left: 41px;
+    margin-left: 140px;
     position: relative;
     top: 20px;
 }
 
 .tweetBubble {
-    clear: both;
     display: block;
     float: right;
     left: 25px;
@@ -193,7 +206,8 @@ li.share {
     clear: both;
     float: right;
     height: 615px;
-    opacity: 0.8;
+    opacity: 0.851;
+    overflow: hidden;
     position: relative;
     top: -215px;
     width: 494px;
@@ -202,7 +216,7 @@ li.share {
 #voteDetails > ul {
     color: #FFFFFF;
     display: block;
-    margin-left: 40px;
+    margin-left: 140px;
     margin-top: 25px;
     position: absolute;
     width: 330px;
@@ -211,11 +225,12 @@ li.share {
 .dateTime {
     color: #3E0000;
     font-family: Arial,sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     left: 30px;
+    list-style: none outside none;
     position: absolute;
-    top: -9px;
+    top: -6px;
 }
 
 .city01, .city02, .city03, .city04, .city05, .city06 {
@@ -229,9 +244,9 @@ li.share {
 
 #voteDetails ul span {
     display: inline-block;
-    left: 50px;
+    left: 48px;
     position: relative;
-    top: 10px;
+    top: -12px;
 }
 
 ul span li p {
@@ -246,21 +261,13 @@ ul span li p {
     position: absolute;
 }
 
-#voteDetails ul span#city01 li.city01, #voteDetails ul span#city01 li.city02, #voteDetails ul span#city01 li.city03 {
+#voteDetails ul span#city01 li.city01, #voteDetails ul span#city01 li.city02, #voteDetails ul span#city01 li.city03, #voteDetails ul span#city01 li.city04, #voteDetails ul span#city01 li.city05, #voteDetails ul span#city01 li.city06 {
     display: inline-block;
     float: left;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-
-#voteDetails ul span#city02 li.city04, #voteDetails ul span#city02 li.city05, #voteDetails ul span#city02 li.city06 {
-    display: inline-block;
-    float: left;
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
+    line-height: 25px;
+    margin: 12px 0 0;
     padding: 0;
 }
 
@@ -269,7 +276,7 @@ p.votePop {
     float: right;
     left: 25px;
     margin-left: -20px;
-    margin-top: 23px;
+    margin-top: 10px;
     padding: 0;
     position: relative;
     top: 1px;
@@ -283,6 +290,17 @@ span#city01 {
 span#city02{
 	display: inline-block;
 	float: right;
+}
+
+#voteDetails ul span #astrix {
+    display: block;
+    float: left;
+    font-size: 24px;
+    left: -30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 28px;
 }
 
 .cityDetails {
@@ -301,11 +319,197 @@ span#city02{
 
 /* Map CSS*/
 div.container div#map-container div#map svg path{
-fill: black;
-color: #000;
+fill: #000000 !important;
+}
+
+/*Stream CSS*/
+.entity-sidebar .flag {
+    display: none;
+    position: absolute;
+    vertical-align: top;
 }
 
 
+
+.entity-avatar-img {
+    border-radius: 5px 5px 5px 5px;
+    clear: both;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.entity-primary-name {
+    color: #E72116;
+    float: left;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin: -2px 0 0;
+    text-decoration: none;
+}
+
+.entity-secondary-name {
+    float: left;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin: -1px 0 0 8px;
+}
+
+.entity-author {
+    float: left;
+}
+
+.entity-text {
+    color: #CCCCCC;
+    float: left;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    width: 80%;
+}
+
+.status-link-user.tweet-url.username {
+    color: #FFFFFF;
+}
+
+.entity-meta {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    margin: 0;
+}
+
+.tr-via {
+    display: none;
+}
+
+.tr-author-location {
+    float: left;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.status-link-search.tweet-url.hashtag {
+    color: #FFFFFF;
+}
+
+.entity-actions {
+    border: 0 none;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.entity-permalink {
+	color: #e72116;
+    display: block;
+    float: right;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: -420px;
+    top: -50px;
+    width: 50px;
+}
+
+.entity-created-at.relative-date {
+    color: #E72116;
+    text-decoration: none;
+}
+
+.entity-retweeted-by-user {
+    color: #E72116;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.entity-retweeted-by {
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.js-display-url {
+    color: #E72116;
+    text-decoration: none !important;
+}
+
+#pollDetails {
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px 20px;
+    letter-spacing: 1px;
+}
+
+circle {
+    fill: #FFFFFF;
+}
+
+.underline > a {
+    color: #E72116;
+}
+
+/*
+Splash page
+*/
+.splash {
+    top: 0 !important;
+}
+
+.pizzaLarge {
+    display: block;
+    float: left;
+    margin: -61px 0 0 -100px;
+    padding: 0;
+}
+
+.pizzaCopy {
+    display: block;
+    float: left;
+    left: -80px;
+    position: relative;
+    top: 130px;
+}
+
+#inner.innerSplash {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    top: -110px;
+    width: 1050px;
+    z-index: 10;
+}
+
+.pizzaSteps {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -130px;
+}
+
+#container.splash {
+    height: auto;
+}
+
+#headerAcent {
+    background: none repeat scroll 0 0 #3E0000;
+    height: 110px;
+    position: relative;
+    z-index: 3;
+}
 
 /* ==========================================================================
    Media Queries
